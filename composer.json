@@ -1,0 +1,19 @@
+{
+    "name": "valen/pwd-tp5-1",
+    "type": "project",
+    "require": {
+        "mpdf/qrcode": "^1.2.1",
+        "doctrine/orm": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Valen\\PwdTp51\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Balenbv",
+            "email": "valentinbv29@gmail.com"
+        }
+    ]
+}
