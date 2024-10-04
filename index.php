@@ -1,4 +1,6 @@
 <?php
 
- include __DIR__ . '\vendor\autoload.php';
- include  __DIR__ . '\src\index.php';
+include 'vendor/autoload.php';
+
+include './src/index.php';
+
