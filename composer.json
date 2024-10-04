@@ -1,19 +1,18 @@
 {
-    "name": "valen/pwd-tp5-1",
-    "require": {
-        "mpdf/qrcode": "^1.2",
-        "filp/whoops": "^2.16"
-    },
+    "name": "grupo7/pwd-tp5",
     "autoload": {
-        "psr-0": {"": "src/"}
+        "psr-4": {
+            "Grupo7\\PwdTp5\\": "src/"
+        }
     },
     "authors": [
         {
-            "name": "Balenbv",
-            "email": "valentinbv29@gmail.com"
+            "name": "juancruzgw",
+            "email": "jgeslowski@gmail.com"
         }
     ],
-    "config": {
-        "bin-dir": "bin"
+    "require": {
+        "mpdf/qrcode": "^1.2",
+        "filp/whoops": "^2.16"
     }
 }
