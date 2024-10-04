@@ -1,6 +1,6 @@
 <?php
 
-include_once '../estructura/header.php';
+include_once './estructura/header.php';
 ?>
 <div class="contenedorPrincipal"> 
     <h1>PAGINA DE INICIO</h1>
@@ -9,5 +9,5 @@ include_once '../estructura/header.php';
 
 <?php
 
-include_once '../estructura/footer.php';
+include_once './estructura/footer.php';
 ?>
