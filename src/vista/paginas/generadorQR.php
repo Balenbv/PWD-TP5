@@ -4,7 +4,10 @@ session_start();
 ?>
 
 <div class="contenedorPrincipal">
-    <h1>Generador QR</h1>
+    <div class="container-sm">
+        <h1>Generador QR</h1>
+    </div>    
+
     <div class="container">
         <div class="textoInformativo">
             <p>Los códigos QR (Quick Response) son un tipo de código de barras bidimensional que se pueden escanear con la cámara de un teléfono inteligente. Se utilizan para almacenar información que se puede leer rápidamente, como URLs, datos de contacto, texto, entre otros.</p>
