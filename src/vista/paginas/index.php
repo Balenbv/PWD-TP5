@@ -8,10 +8,10 @@ include_once '../estructura/header.php';
         <a href="#">Descarga Qrcode</a>
     </div>
     <div class="container-sm mt-4 ">
-        <h1 class="contenidos-tutorial">Instalacion de Qrcode</h1>
+        <h1 class="contenidos-tutorial border-bottom">Instalacion de Qrcode para PHP</h1>
     </div>
     <div class="contenido-compatibilidades container-sm mt-4">
-        <h2 class="contenidos-tutorial">compatibilidad de version de PHP</h2>
+        <h2 class="contenidos-tutorial">Compatibilidad de versiones</h2>
         <p>Qrcode para PHP requiere PHP 5.0 hasta 8.0 </p>
     </div>
     <div class="container-sm mt-4">
@@ -20,7 +20,7 @@ include_once '../estructura/header.php';
         <p>Para comenzar , puede usar <a href="https://getcomposer.org/">Composer</a> para poder instalar la libreria mas facilmente</p>
     </div>
     <div class="container-sm mt-4">
-        <h2 class="contenidos-tutorial">Instalacion de Qrcode para PHP</h2>
+        <h2 class="contenidos-tutorial">Instalacion de Qrcode para PHP:</h2>
         <h3>Requisitos Previos</h3>
         <p>Antes de comenzar, asegúrate de tener instalado Composer, que es una herramienta para la gestión de dependencias en PHP. Si no lo tienes, puedes descargarlo e instalarlo desde su sitio oficial</p>
         <h3>Instalacion de la Biblioteca</h3>

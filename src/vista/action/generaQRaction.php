@@ -1,6 +1,7 @@
 <?php
 include "../../../vendor/autoload.php";
 include '../estructura/header.php';
+
 session_start(); 
 use Mpdf\QrCode\QrCode;
 use Mpdf\QrCode\Output;
@@ -42,14 +43,17 @@ $output = new Output\Html();
 $qrHTML = $output->output($qrCode);
 ?>
 
-
-<div>
-    <h1>FOMATO PNG</h1>
-    <img src="filename.png" alt="">
-    <h1>FOMATO SVG</h1>
-    <?php echo $qrSvg; ?>
-    <h1>FOMATO HTML</h1>
-    <?php echo $qrHTML; ?>
+<div class="card-qr">
+    <h1 class="h1-qr">FOMATO <span class="text-info">PNG</span></h1>
+    <img src="filename.png" alt="" class="margenes-qr">
+    <h1 class="h1-qr">FOMATO <span class="text-info">SVG</span></h1>
+    <div class="margenes-qr">
+        <?php echo $qrSvg; ?>
+    </div>
+    <h1 class="h1-qr">FOMATO <span class="text-info">HTML</span></h1>
+    <div class="margenes-qr">
+        <?php echo $qrHTML; ?>
+    </div>
 </div>
 
 <?php

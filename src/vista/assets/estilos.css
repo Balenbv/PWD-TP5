@@ -206,9 +206,7 @@
 
 
 .flex-item-2{
-    display: flex;
-    justify-content: center;
-    margin-left: 20%;
+    margin-left: 15%;
 }
 
 .container-footer{
@@ -219,4 +217,23 @@
 
 .contenidos-tutorial{
     color: rgb(79, 93, 149);
+}
+
+.card-qr{
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    width: 30%;
+    min-height: 33em;
+}
+
+.margenes-qr{
+    margin-left: 40%;
+}
+
+
+.h1-qr{
+    margin-left: 20px;
+    margin-top: 20px;
 }
