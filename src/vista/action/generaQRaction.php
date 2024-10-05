@@ -44,13 +44,13 @@ $qrHTML = $output->output($qrCode);
 ?>
 
 <div class="card-qr">
-    <h1 class="h1-qr">FOMATO <span class="text-info">PNG</span></h1>
+    <h1 class="h1-qr">FORMATO <span class="text-info">PNG</span></h1>
     <img src="filename.png" alt="" class="margenes-qr">
-    <h1 class="h1-qr">FOMATO <span class="text-info">SVG</span></h1>
+    <h1 class="h1-qr">FORMATO <span class="text-info">SVG</span></h1>
     <div class="margenes-qr">
         <?php echo $qrSvg; ?>
     </div>
-    <h1 class="h1-qr">FOMATO <span class="text-info">HTML</span></h1>
+    <h1 class="h1-qr">FORMATO <span class="text-info">HTML</span></h1>
     <div class="margenes-qr">
         <?php echo $qrHTML; ?>
     </div>

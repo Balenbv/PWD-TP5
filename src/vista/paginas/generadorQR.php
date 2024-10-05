@@ -5,7 +5,7 @@ session_start();
 
 <div class="contenedorPrincipal">
     <div class="container-sm">
-        <h1>Generador QR</h1>
+        <h1 style="padding-top: 10%">Generador QR</h1>
     </div>    
 
     <div class="container">

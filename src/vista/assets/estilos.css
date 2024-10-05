@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+
+    
 }
 
 
@@ -11,7 +13,7 @@
  -------------------------------------------- */
 
 a{
-    text-decoration: none
+    
 }
 
 .header {
@@ -27,7 +29,8 @@ a{
  .header h1 {
     display: flex;
     justify-content: center;
-    padding-top: 1%
+    padding-top: 1%;
+    text-decoration: none;
  }
 
  .container-flex{
@@ -61,14 +64,18 @@ a{
     transform: scale(1.01);
     transition: all 0.3s ease-in-out;
     box-shadow: 0 0 5px;
+   
  }
  /**BOTON DE VOLVER */
  .boton {
     display: inline-block;
-    padding: 20px 30px;
-    margin: 11px 0 0 90px;
+    position: relative;
+    padding-top: 20px;
+    left: 120px;
+    width: 75px;
+    height: 75px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 25px;
     text-align: center;
     text-decoration: none;
     color: #fff;
@@ -330,9 +337,26 @@ label {
     background-color: #fff;
     margin: auto;
 }
-.contenedorPrincipal h2 {
+.contenedorPrincipal .achedos {
     display: flex;
     justify-content: center;
     
-    padding-top: 30px;
+    padding-top: 10%;
+    font-size: 30px;
+
+}
+.container-sm ul {
+    list-style-type: none;
+    padding-left: 20px;      
+    margin-bottom: 20px;     
+    display: flex;
+    justify-content: space-evenly;
+          
+    padding: 15px;            
+}
+
+.container-sm ul li {
+    padding: 5px 0;          
+    font-size: 16px;        
+    color: #333;             
 }

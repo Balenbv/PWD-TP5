@@ -1,7 +1,7 @@
 <?php 
 include_once 'conector/baseDatos.php';
 
-class Persona extends BaseDatos {
+class Persona extends baseDatos {
     private $nroDni;
     private $nombre;
     private $apellido;
@@ -70,7 +70,7 @@ class Persona extends BaseDatos {
     public function insertar() {
         $resp = false;
         $base = new BaseDatos();
-        $sql = "INSERT INTO persona(nroDni, Nombre, Apellido) VALUES('".$this->getNroDni()."', '".$this->getNombre()."', '".$this->getApellido()."', ')";
+        $sql = "INSERT INTO persona(nroDni, Nombre, Apellido) VALUES('".$this->getNroDni()."', '".$this->getNombre()."', '".$this->getApellido()."')";
         if ($base->Iniciar()) {
             if ($base->Ejecutar($sql)) {
                 $resp = true;

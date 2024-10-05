@@ -33,10 +33,9 @@ class AbmPersona{
     private function cargarObjeto($param) {
         $obj = null;
 
-        if (array_key_exists('NroDni', $param) && array_key_exists('Nombre', $param) && array_key_exists('Apellido', $param) &&
-            array_key_exists('fechaNac', $param) && array_key_exists('Telefono', $param) && array_key_exists('Domicilio', $param)) {
+        if (array_key_exists('NroDni', $param) && array_key_exists('Nombre', $param) && array_key_exists('Apellido', $param)) {
             $obj = new Persona();
-            $obj->setear($param['NroDni'], $param['Nombre'], $param['Apellido'], $param['fechaNac'], $param['Telefono'], $param['Domicilio']);
+            $obj->setear($param['NroDni'], $param['Nombre'], $param['Apellido']);
         }
         return $obj;
     }
@@ -153,7 +152,7 @@ class AbmPersona{
         $result = [];
         if (!empty($arreglo)) {
             foreach ($arreglo as $persona) {
-            $result[] = ['NroDni' => $persona->getNroDni(),'Nombre' => $persona->getNombre(),'Apellido' => $persona->getApellido(),'fechaNac' => $persona->getFechaNac(),'Telefono' => $persona->getTelefono(),'Domicilio' => $persona->getDomicilio()];
+            $result[] = ['NroDni' => $persona->getNroDni(),'Nombre' => $persona->getNombre(),'Apellido' => $persona->getApellido()];
             }
         }
         return $result;

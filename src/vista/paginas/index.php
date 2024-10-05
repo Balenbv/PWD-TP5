@@ -3,6 +3,13 @@
 include_once '../estructura/header.php';
 ?>
 <div class="contenedorPrincipal"> 
+    <div class="container-sm">
+        <ul>
+            <li><a href="#qrcode" class="fs-1">Qrcode.</a></li>
+            <li><a href="#whoop" class="fs-1">Whoops.</a></li>
+        </ul>
+        
+    </div>
     <div class="contenido-descarga container-sm mt-4 border">
         <p>mpdf/qrcode (PHP Edition)</p>
         <a href="#">Descarga Qrcode</a>
@@ -64,8 +71,49 @@ include_once '../estructura/header.php';
             header('Content-Type: ' . $result->getMimeType());
             echo $result->getString();
         </code>
-    </div>
-    
+    </div >
+        <div class="container-sm" id="whoop">
+            <div class="mt-5">
+                <h1 class="contenidos-tutorial">Instalacion de WHOOPS para PHP</h1>
+                <div class="contenido-descarga container-sm mt-4 border">
+                    <p>filps/whoops (PHP Edition)</p>
+                    <a href="https://github.com/filp/whoops">Descarga whoops</a>
+                </div>
+                <div>
+                    <h3>Uso de excepciones</h3>
+                    <p>En PHP, puedes lanzar excepciones usando la palabra clave throw y manejarlas con try-catch. Esto te permite interceptar errores y reaccionar ante ellos de manera controlada.</p> <br>
+                    <p>
+                        <code>
+                                                try { <br>
+                             throw new Exception("Ocurrió un error."); <br>
+                                } catch (Exception $e) {<br>
+                                // Whoops manejará el error automáticamente <br>
+                             } <br>
+                        </code>
+                    </p>
+                </div>
+                <div>
+                    <h3>Uso Basico.</h3>
+                    <p> Aquí un ejemplo básico de cómo configurar y usar Whoops:</p>
+                </div>
+                <code>
+                        require 'vendor/autoload.php'; <br>
+                        <br>
+                        <br>
+                        use Whoops\Run; <br>
+                        use Whoops\Handler\PrettyPageHandler; <br>
+                        <br>
+                        // Configuración de Whoops <br>
+                        $whoops = new Run(); <br>
+                        $whoops->pushHandler(new PrettyPageHandler()); <br>
+                        $whoops->register(); <br>
+                        <br>
+                        // Generar un error para probar <br>
+                        $undefinedVariable; // Esto causará un error <br>
+                        <br>
+                </code>
+            </div>
+        </div>
 </div>
 
 <?php
