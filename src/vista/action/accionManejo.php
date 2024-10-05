@@ -1,10 +1,9 @@
 <?php
 require '../../../config.php';
+require '../../../vendor/autoload.php';
 
 $datos = data_submitted();
 $abm = new abmPersona();
-
-require '../../../vendor/autoload.php';
 
 use Whoops\Run;
 use Whoops\Handler\PrettyPageHandler;
@@ -12,7 +11,6 @@ use Whoops\Handler\PrettyPageHandler;
 $whoops = new Run();
 $whoops->pushHandler(new PrettyPageHandler());
 $whoops->register();
-
 ?>
 
 <div class="contenedorPrincipal">
