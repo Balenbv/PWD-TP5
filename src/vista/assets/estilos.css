@@ -4,10 +4,11 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
  /** ------------------------------------------
  -----------------  HEADER  ------------------
  -------------------------------------------- */
-
 
 .header {
     background-color:#1A6DD9;
@@ -24,16 +25,6 @@
     justify-content: center;
     padding-top: 1%
  }
-
- /*
- .header ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-  transition: 0.9 ease-in-out;
- }
- */
-
 
  .container-flex{
     display: flex;
@@ -97,22 +88,19 @@
     outline: none;
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
 }
+
+
   /** ------------------------------------------
  ---------- contenedorPrincipal ----------------
  -------------------------------------------- */
 
  .contenedorPrincipal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     margin: auto;
     margin-bottom: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px;
-    /*border: 1px solid;*/
     width: 90%;
-    height: 600px;
+    height: 50em;
 
  }
    /** ------------------------------------------
