@@ -14,8 +14,8 @@ session_start();
             <div>
                 <ul>
                     <li><img src="../assets/boke.png" >(no carga)</li>
-                    <li><img src="" >(foto qr)</li>
-                    <li><img src="" >(foto qr)</li>
+                    <li><img src="">(foto qr)</li>
+                    <li><img src="">(foto qr)</li>
                 </ul>
             </div>
         </div>
@@ -32,7 +32,7 @@ session_start();
 
                     <div class="form-group">
                         <label for="tamano">Tamaño del QR (px):</label>
-                        <input type="number" id="tamano" name="tamano" class="form-control" value="200" min="100" max="1000" required>
+                        <input type="number" id="tamano" name="tamano" class="form-control" value="200" min="100" max="150" required>
                     </div>
                     
                     <div class="form-group">

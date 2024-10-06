@@ -18,16 +18,16 @@ include_once '../estructura/header.php';
         <h1 class="contenidos-tutorial border-bottom">Instalacion de Qrcode para PHP</h1>
     </div>
     <div class="contenido-compatibilidades container-sm mt-4">
-        <h2 class="contenidos-tutorial">Compatibilidad de versiones</h2>
+        <h3>Compatibilidad de versiones</h3>
         <p>Qrcode para PHP requiere PHP 5.0 hasta 8.0 </p>
     </div>
     <div class="container-sm mt-4">
-        <h2 class="contenidos-tutorial">Extraccion de la distribucion de Qrcode</h2>
+        <h3 class="contenidos-tutorial">Extraccion de la distribucion de Qrcode</h3>
         <p>Qrcode para PHP es compatible con Windows , linux y macOS .Verifique que la distribucion de Qrcode que ha descargado sea para la edicion del sistema operativo de PHP que esta usando .Si no esta seguro del tipo de PHP que esta usando .Puede usar phpInfo para averiguarlo</p>
         <p>Para comenzar , puede usar <a href="https://getcomposer.org/">Composer</a> para poder instalar la libreria mas facilmente</p>
     </div>
     <div class="container-sm mt-4">
-        <h2 class="contenidos-tutorial">Instalacion de Qrcode para PHP:</h2>
+        <h3 class="contenidos-tutorial">Instalacion de Qrcode para PHP:</h3>
         <h3>Requisitos Previos</h3>
         <p>Antes de comenzar, asegúrate de tener instalado Composer, que es una herramienta para la gestión de dependencias en PHP. Si no lo tienes, puedes descargarlo e instalarlo desde su sitio oficial</p>
         <h3>Instalacion de la Biblioteca</h3>
@@ -36,6 +36,8 @@ include_once '../estructura/header.php';
             <li>Ejecuta el siguiente comando para instalar la biblioteca Endroid QR Code:</li>
         </ol>
         <code>composer require endroid/qr-code</code>
+        <br>
+        <br>
         <h3>Uso Basico</h3>
         <p>Una vez instalada la biblioteca, puedes generar códigos QR con el siguiente script:</p>
         <code>
@@ -79,26 +81,35 @@ include_once '../estructura/header.php';
                     <p>filps/whoops (PHP Edition)</p>
                     <a href="https://github.com/filp/whoops">Descarga whoops</a>
                 </div>
-                <div>
-                    <h3>Uso de excepciones</h3>
-                    <p>En PHP, puedes lanzar excepciones usando la palabra clave throw y manejarlas con try-catch. Esto te permite interceptar errores y reaccionar ante ellos de manera controlada.</p> <br>
-                    <p>
-                        <code>
-                                                try { <br>
-                             throw new Exception("Ocurrió un error."); <br>
-                                } catch (Exception $e) {<br>
-                                // Whoops manejará el error automáticamente <br>
-                             } <br>
-                        </code>
-                    </p>
-                </div>
-                <div>
-                    <h3>Uso Basico.</h3>
-                    <p> Aquí un ejemplo básico de cómo configurar y usar Whoops:</p>
-                </div>
+                <br>
+                <h3>Compatibilidad de versiones</h3>
+                <p>La librería Whoops es compatible con PHP a partir de la versión 7.1 y 8.0</p>
+                <h3 class="contenidos-tutorial">Extraccion de la distribucion de whooops</h3>
+                <p>Distribuciones Whoops funciona en todas las plataformas principales, incluyendo Windows, macOS y Linux</p>
+                <h3>Método de instalación</h3>
+                <p>Para instalar Whoops usando Composer, sigue estos pasos:</p>
+                <ol>
+                    <li>Abre un terminal y navega al directorio de tu proyecto.</li>
+                    <li>Ejecuta el siguiente comando:</li>
+                    <code>composer require filp/whoops</code>
+                </ol>
+
+                <h3>Uso de excepciones</h3>
+                <p>En PHP, puedes lanzar excepciones usando la palabra clave throw y manejarlas con try-catch. Esto te permite interceptar errores y reaccionar ante ellos de manera controlada.</p> <br>
+                <p>
+                    <code>
+                                            try { <br>
+                            throw new Exception("Ocurrió un error."); <br>
+                            } catch (Exception $e) {<br>
+                            // Whoops manejará el error automáticamente <br>
+                            } <br>
+                    </code>
+                </p>
+                <h3>Uso Basico.</h3>
+                <p> Aquí un ejemplo básico de cómo configurar y usar Whoops:</p>
+            
                 <code>
-                        require 'vendor/autoload.php'; <br>
-                        <br>
+                        require 'vendor/autoload.php'; 
                         <br>
                         use Whoops\Run; <br>
                         use Whoops\Handler\PrettyPageHandler; <br>

@@ -42,3 +42,25 @@ spl_autoload_register(function ($class_name){
     }
     return $LoEncontro;
 });
+
+
+
+function hexToRgb($hex) {
+    // Eliminar el símbolo '#' si está presente
+    $hex = str_replace("#", "", $hex);
+
+    // Convertir el valor hexadecimal a RGB
+    if (strlen($hex) == 3) {
+        // Formato abreviado (ej. #FFF)
+        $r = hexdec($hex[0] . $hex[0]);
+        $g = hexdec($hex[1] . $hex[1]);
+        $b = hexdec($hex[2] . $hex[2]);
+    } else {
+        // Formato completo (ej. #FFFFFF)
+        $r = hexdec($hex[0] . $hex[1]);
+        $g = hexdec($hex[2] . $hex[3]);
+        $b = hexdec($hex[4] . $hex[5]);
+    }
+
+    return array($r, $g, $b);
+}
