@@ -11,6 +11,13 @@ session_start();
     <div class="container">
         <div class="textoInformativo">
             <p>Los códigos QR (Quick Response) son un tipo de código de barras bidimensional que se pueden escanear con la cámara de un teléfono inteligente. Se utilizan para almacenar información que se puede leer rápidamente, como URLs, datos de contacto, texto, entre otros.</p>
+            <div>
+                <ul>
+                    <li><img src="../assets/boke.png" >(no carga)</li>
+                    <li><img src="" >(foto qr)</li>
+                    <li><img src="" >(foto qr)</li>
+                </ul>
+            </div>
         </div>
     
         <div class="card" style="border-radius:15px; display: flex; justify-content:center; align-items: center;">

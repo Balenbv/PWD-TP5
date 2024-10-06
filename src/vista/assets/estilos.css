@@ -55,6 +55,9 @@ a{
     display: inline-flex;
 
  }
+ .qr {
+    margin: auto;
+ }
 
  .header ul li a {
     color: #000000;

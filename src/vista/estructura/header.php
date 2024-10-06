@@ -23,5 +23,10 @@
                         <li class=""><a href="../paginas/manejoErrores.php"  style="text-decoration:none;">Manejo de errores.</a></li>
                     </ul>
                 </div>
+                <div class="qr">
+                <p> </p>
+                <img src="../assets/rickroll.png">
             </div>
+            </div>
+         
     </div>
