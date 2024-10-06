@@ -4,7 +4,15 @@ include_once "../estructura/header.php";
 ?>
 
 <div class="contenedorPrincipal">
-    <div class="achedos">Manejo de errores</div>
+
+<div class="container-card-flex">
+    <div class="card-form">
+        <h1>IDEAS</h1>
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+    </div>
     <div class="card-form">
         <form action="../action/accionManejo.php" method="post">
             <div class="form-group">
@@ -24,7 +32,16 @@ include_once "../estructura/header.php";
 
             <button type="submit" class="btn-enviar">Enviar</button>
         </form>
+    </div>
+    <div class="card-form">
+        <h1>IDEAS</h1>
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+    </div>
 </div>
+
 
 </div>
 <?php

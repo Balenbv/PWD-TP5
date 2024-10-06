@@ -32,7 +32,7 @@ session_start();
 
                     <div class="form-group">
                         <label for="tamano">Tamaño del QR (px):</label>
-                        <input type="number" id="tamano" name="tamano" class="form-control" value="200" min="100" max="150" required>
+                        <input type="number" id="tamano" name="tamano" class="form-control" value="100" min="100" max="150" required>
                     </div>
                     
                     <div class="form-group">

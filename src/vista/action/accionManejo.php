@@ -1,6 +1,7 @@
 <?php
 require '../../../config.php';
 require '../../../vendor/autoload.php';
+include '../estructura/header.php';
 
 $datos = data_submitted();
 $abm = new abmPersona();
@@ -11,16 +12,14 @@ use Whoops\Handler\PrettyPageHandler;
 $whoops = new Run();
 $whoops->pushHandler(new PrettyPageHandler());
 $whoops->register();
+
+$abm->buscar($datos);
+$abm->alta($datos);
 ?>
 
 <div class="contenedorPrincipal">
-    <h2>Manejo de errores</h2>
-    <div class="card-form">
-        <?php
-        $abm->buscar($datos);
-        $abm->alta($datos);
-        print_r($datos);
-        ?>
+    <div class="card-form card-special">
+        <h1 class="IngresoCorrecto">Se ingreso correctamente su usuario!!</h1>
     </div>
 </div>
 

@@ -372,3 +372,31 @@ label {
     justify-content: right;
     width: 10%;
 }
+
+
+.card-special{
+    width: 90%;
+    background-color: #32af32;
+    color: white;
+    text-align: center;
+    position: relative;
+    animation: slideIn 3s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+
+.container-card-flex{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10%;
+}
