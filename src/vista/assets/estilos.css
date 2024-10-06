@@ -37,11 +37,12 @@ a{
     display: flex;
     flex-direction: row;
     padding-bottom: 1%;
+    flex-wrap: 10px;
+    flex-wrap: 10px;
+
  }
 
  .header ul li {
-    margin: 22px 60px;
-    margin-bottom: 20px;
     font-size: 28px;
     height: 48px;
     width: 300px;
@@ -69,11 +70,9 @@ a{
  /**BOTON DE VOLVER */
  .boton {
     display: inline-block;
-    position: relative;
     padding-top: 20px;
-    left: 120px;
     width: 75px;
-    height: 75px;
+    height: 65px;
     font-size: 16px;
     border-radius: 25px;
     text-align: center;
@@ -217,7 +216,11 @@ a{
 
 
 .flex-item-2{
-    margin-left: 15%;
+    align-items: flex-end;
+    display: flex;
+    justify-content: right;
+    width: 55%;
+    flex-wrap: 13px;
 }
 
 .container-footer{
@@ -359,4 +362,11 @@ label {
     padding: 5px 0;          
     font-size: 16px;        
     color: #333;             
+}
+
+
+.flex-item-1{
+    display: flex;
+    justify-content: right;
+    width: 10%;
 }
