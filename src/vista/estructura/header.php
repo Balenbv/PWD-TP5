@@ -1,3 +1,12 @@
+<?php
+    require_once "../../../vendor/autoload.php";
+    use Whoops\Run;
+    use Whoops\Handler\PrettyPageHandler;
+    $whoops = new Run();
+    $whoops->pushHandler(new PrettyPageHandler());
+    $whoops->register();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +29,7 @@
                 <div class="flex-item-2">
                     <ul>
                         <li class=""><a href="../paginas/generadorQR.php" style="text-decoration:none;">Generador de QR</a></li>
-                        <li class=""><a href="../paginas/manejoErrores.php"  style="text-decoration:none;">Manejo de errores.</a></li>
+                        <li class=""><a href="../action/accionManejo.php"  style="text-decoration:none;">Manejo de errores. </a></li>
                     </ul>
                 </div>
                 

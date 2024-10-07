@@ -1,10 +1,5 @@
 <?php
-include "../../../vendor/autoload.php";
-use Whoops\Run;
-use Whoops\Handler\PrettyPageHandler;
-$whoops = new Run();
-$whoops->pushHandler(new PrettyPageHandler());
-$whoops->register();
+include "../estructura/header.php";
 
     $a = 10;
     $b = 0;
@@ -12,5 +7,4 @@ $whoops->register();
         return $a / $b;
     }
     division($a, $b);
-
 ?>

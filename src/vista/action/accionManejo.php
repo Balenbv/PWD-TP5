@@ -38,9 +38,8 @@ $whoops->register();
             eval('echo "Esto es un error de parseo;');
             </pre>
         </code>
-    <a href="ErrorParseo.php"><button> Ver Error </button></a>
+    <a href="errorParseo.php"><button> Ver Error </button></a>
 
-    
     <h2>Error 3</h2>
         <h3>Error de tiempo de Ejecucion</h3>
         <code>
@@ -76,7 +75,7 @@ $whoops->register();
             trigger_error("Esto es un error de usuario", E_USER_NOTICE);
             </pre>
         </code>
-    <a href="errorUsuario.php"><button>Ver Error</button></a>
+    <a href="loginUsuario.php"><button>Ver Error</button></a>
 
 
     <div class="card-form">

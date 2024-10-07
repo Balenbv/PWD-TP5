@@ -15,7 +15,6 @@ function data_submitted() {
             }
         }
         return $_AAux;
-        
 }
 
 function verEstructura($e){

@@ -1,4 +1,4 @@
-CREATE DATABASE "infoPersonas";
+CREATE DATABASE infoPersonas;
 
 CREATE TABLE `persona` (
   `NroDni` varchar(10) character set utf8 collate utf8_unicode_ci NOT NULL,
@@ -11,4 +11,4 @@ CREATE TABLE `persona` (
 
 INSERT INTO `persona` (`NroDni`, `Apellido`, `Nombre`) VALUES 
 ('28326986', 'Valentin', 'Soto'),
-('25963874', 'Miguel', 'Villar'),
+('25963874', 'Miguel', 'Villar')
