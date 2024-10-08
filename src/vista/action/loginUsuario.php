@@ -34,7 +34,7 @@ if (count($personas) > 0) {
 
 echo '
     <div class="card-form">
-        <form action="./errorUsuario.php" method="post">
+        <form action="./error.php" method="post">
             <div class="form-group">
                 <label for="nombre">Ingrese su nombre</label>
                 <input type="text" name="Nombre" id="nombre" class="input-text">

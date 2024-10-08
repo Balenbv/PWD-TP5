@@ -29,7 +29,7 @@ $whoops->register();
             division($a, $b);
             </pre>
         </code>
-    <a href="errorFatal.php"><button>Ver Error</button></a>
+    <button onclick="moverA(1)">Ver Error</button>
 
     <h2>Error 2</h2>
         <h3>Error de Parseo</h3>
@@ -38,7 +38,7 @@ $whoops->register();
             eval('echo "Esto es un error de parseo;');
             </pre>
         </code>
-    <a href="errorParseo.php"><button> Ver Error </button></a>
+    <button onclick="moverA(2)"> Ver Error </button>
 
     <h2>Error 3</h2>
         <h3>Error de tiempo de Ejecucion</h3>
@@ -48,7 +48,7 @@ $whoops->register();
             echo $array[5];
             </pre>
         </code>
-    <a href="errorTiempoDeEjecucion.php"><button>Ver Error</button></a>
+    <button onclick="moverA(3)">Ver Error</button>
 
     <h2>Error 4</h2>
         <h3>Excepcion no capturada</h3>
@@ -57,7 +57,7 @@ $whoops->register();
             throw new Exception("Esto es una excepción no capturada");
             </pre>
         </code>
-    <a href="errorExcepcion.php"><button>Ver Error</button></a>
+    <button onclick="moverA(4)">Ver Error</button>
 
     <h2>Error 5</h2>
         <h3>Error de Notificacion</h3>
@@ -66,7 +66,7 @@ $whoops->register();
             echo $variable_no_definida;
             </pre>
         </code>
-    <a href="errorDeNotificacion.php"><button>Ver Error</button></a>
+    <button onclick="moverA(5)">Ver Error</button>
     
     <h2>Error 6</h2>
         <h3>Error de Usuario</h3>
@@ -75,17 +75,14 @@ $whoops->register();
             trigger_error("Esto es un error de usuario", E_USER_NOTICE);
             </pre>
         </code>
-    <a href="loginUsuario.php"><button>Ver Error</button></a>
-
-
-    <div class="card-form">
-        <?php
-        // $abm->buscar($datos);
-        // $abm->alta($datos);
-        print_r($datos);
-        ?>
-    </div>
+    <button onclick="moverA(6)">Ver Error</button>
 </div>
+
+<script>
+    function moverA(error){
+    window.location.href = "http://localhost/PWD-TP5/src/vista/action/error.php?error=" + error;
+    }
+</script>
 
 <?php
 include_once "../estructura/footer.php"; 
