@@ -400,3 +400,48 @@ label {
     flex-direction: row;
     padding-top: 10%;
 }
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 10% 0 10%;
+    grid-gap: 22px
+}
+
+.flex-btn{
+    position: relative;
+    left: 30%;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.flex-btn:hover{
+    background-color: #0056b3
+}
+
+.item-grid{
+        padding: 20px;
+        border-radius: 29px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.btn-2{
+    margin-top: 31%;
+}
+
+.btn-3{
+    margin-top: 14%;
+}
