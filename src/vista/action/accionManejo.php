@@ -18,7 +18,7 @@ $whoops->register();
 
     <div class="container tex-center"><h1>Manejo de errores por Whoops</h1></div>
 
-    <div class="grid-container">
+    <div class="grid-container text-center">
 
         <div class="item-grid">
             <h2>Error 1:</h2>
@@ -79,12 +79,12 @@ throw new Exception("Esto es una excepción no capturada");
                     </pre>
                 </code>
                 
-                <div class="container-btn mt-5">
+                <div class="container-btn mt-5 pt-4">
                     <button onclick="moverA(4)" class="flex-btn">Ver Error</button>
                 </div>
             
         </div>
-        <div class="item-grid">
+        <div class="item-grid box-grid-alone">
             <h2>Error 5</h2>
                 <h2>Error de Notificacion</h2>
                 <code>
@@ -99,15 +99,15 @@ echo $variable_no_definida;
 
         </div>
 
-        <div class="item-grid">
-            <h2>Error 6</h2>
+        <div class="item-grid box-informacionPersona-grid">
+            <h2>Error 6</h2> 
                 <h2>Error de Usuario</h2>
                 <?php
                 $personas= $abm->obtenerDatos(null);
 
                 if (count($personas) > 0) {
-                    echo "<div class='contenedorPrincipal'>
-                    <table class='table table-bordered'>
+                    echo "<div class='contenedorPrincipal-special'>
+                    <table class='table-persona'>
                         <thead class='thead-dark'>
                         <tr>
                         <th>Nombre</th>
