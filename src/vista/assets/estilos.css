@@ -465,9 +465,7 @@ pre{
 .table-persona{
     width: 48%;
     display: inline-block;
-    margin-bottom: 0%;
-    position: relative;
-    bottom: 160px;
+    margin-bottom: 10%;
     margin-right: 8%;
     border-radius: 15px;
     border-collapse: collapse;
