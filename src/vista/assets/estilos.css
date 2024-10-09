@@ -449,19 +449,6 @@ label {
     grid-row-end: 5;
     grid-column: span 2;
 }
-
-.table-persona{
-    width: 48%;
-    display: inline-block;
-    margin-bottom: 2%;
-    margin-right: 7%;
-}
-
-.contenedorPrincipal-special{
-    margin: auto;
-    width: 90%;
-}
-
 .box-grid-alone{
     grid-column: 1/3;
     grid-row: 3/-3;
@@ -474,3 +461,33 @@ tbody, td, tfoot, th, thead, tr{
 pre{
     font-size: 1em !important;
 }
+
+.table-persona{
+    width: 48%;
+    display: inline-block;
+    margin-bottom: 0%;
+    position: relative;
+    bottom: 160px;
+    margin-right: 8%;
+    border-radius: 15px;
+    border-collapse: collapse;
+    
+}
+.table-persona th, .table-persona td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+.table-persona th {
+    background-color: #007bff;
+    color: white;
+}
+
+
+.contenedorPrincipal-special{
+    margin: auto;
+    width: 90%;
+   /* border: 1px solid #000000;*/
+    
+} 
+
