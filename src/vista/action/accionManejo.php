@@ -16,7 +16,7 @@ $whoops->register();
 
 <div class="contenedorPrincipal">
 
-    <div class="container tex-center"><h1>Manejo de errores por Whoops</h1></div>
+    <div class="container tex-center pt-5 mb-5"><h1>Manejo de errores por Whoops</h1></div>
 
     <div class="grid-container text-center">
 
@@ -131,28 +131,28 @@ echo $variable_no_definida;
                 }
 
                 echo '
-    <div class="card-form">
-        <form action="./error.php" method="post">
-            <div class="form-group">
-                <label for="nombre">Ingrese su nombre</label>
-                <input type="text" name="Nombre" id="nombre" class="input-text">
-            </div>
+                <div class="card-form">
+                    <form action="./error.php" method="post">
+                        <div class="form-group">
+                            <label for="nombre">Ingrese su nombre</label>
+                            <input type="text" name="Nombre" id="nombre" class="input-text" required minlength="3" maxlenght="30">
+                        </div>
 
-            <div class="form-group">
-                <label for="apellido">Ingrese su apellido</label>
-                <input type="text" name="Apellido" id="apellido" class="input-text">
-            </div>
+                        <div class="form-group">
+                            <label for="apellido">Ingrese su apellido</label>
+                            <input type="text" name="Apellido" id="apellido" class="input-text" required minlenght="3" maxlenght="30">
+                        </div>
 
-            <div class="form-group">
-                <label for="dni">Ingrese su dni</label>
-                <input type="number" name="NroDni" id="dni" class="input-text">
-            </div>
+                        <div class="form-group"> 
+                            <label for="dni">Ingrese su dni</label>
+                            <input type="number" name="NroDni" id="dni" class="input-text" required minlenght="8" maxlenght="8">
+                        </div>
 
-         <input type="hidden" name="error" value="6">
-         <button type="submit" class="flex-btn">Ver Error</button>
-        </form>
-    </div>
-</div>';
+                        <input type="hidden" name="error" value="6">
+                        <button type="submit" class="flex-btn">Ver Error</button>
+                    </form>
+                </div>
+            </div>';
                 ?>
 
                 <div class="container-btn mt-5">
@@ -163,6 +163,8 @@ echo $variable_no_definida;
     </div>
 </div>
 
+
+
 <script>
     function moverA(error){
        // alert(error);
@@ -170,4 +172,6 @@ echo $variable_no_definida;
     }
 </script>
 
-<?php include_once "../estructura/footer.php";  ?>
+<?php 
+include_once "../estructura/footer.php";  
+?>
