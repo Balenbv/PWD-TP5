@@ -102,11 +102,41 @@ echo $variable_no_definida;
         <div class="item-grid">
             <h2>Error 6</h2>
                 <h2>Error de Usuario</h2>
-                <code>
-                    <pre>
-trigger_error("Esto es un error de usuario",E_USER_NOTICE);
-                    </pre>
-                </code>
+                <?php
+
+                include "../estructura/header.php";
+include '../../modelo/persona.php';
+include '../../control/abmPersona.php';
+$abm = new abmPersona ();
+ $personas= $abm->obtenerDatos(null);
+
+if (count($personas) > 0) {
+    echo "<div class='contenedorPrincipal'>
+    <table class='table table-bordered'>
+          <thead class='thead-dark'>
+          <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>DNI</th>
+          </tr>
+          </thead>
+          <tbody>";
+
+    foreach ($personas as $persona) {
+      
+            
+        echo "<tr>";
+        echo "<td>" . $persona['Nombre'] . "</td>";
+        echo "<td>" . $persona['Apellido'] . "</td>";
+        echo "<td>" . $persona['NroDni'] . "</td>";
+        echo "</tr>";
+    }
+
+    echo "</tbody></table>";
+} else {
+    echo '<div class="alert alert-danger m-3 w-50" role="alert">No hay autos cargados en la base de datos.</div>';
+}
+                ?>
 
                 <div class="container-btn mt-5">
                     <button onclick="moverA(6)" class="flex-btn">Ver Error</button>
