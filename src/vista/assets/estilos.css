@@ -470,3 +470,7 @@ label {
 tbody, td, tfoot, th, thead, tr{
     width: 1%;
 }
+
+pre{
+    font-size: 1em !important;
+}
