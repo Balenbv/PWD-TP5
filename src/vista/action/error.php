@@ -1,10 +1,15 @@
 <?php
 
 include '../estructura/header.php';
+include '../../../config.php';
+include '../../control/abmPersona.php';
 
-$error = $_GET['error'];
+$error = $_GET['error'] ?? null; // Para los errores 1 a 5
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $error = $_POST['error'] ?? null; // Para el error 6
+}
 
-echo $error;
+//echo $error;
 
 switch ($error){
     case '1':
@@ -29,9 +34,17 @@ switch ($error){
         echo $variable_no_definida;
         break;
     case '6':
-        trigger_error("Esto es un error de usuario", E_USER_NOTICE);
+        $abm = new abmPersona();
+        $datos = data_submitted();
+        $abm->alta($datos);
+        echo "<div class='contenedorPrincipal'>
+                    <div class='card-form'> 
+                    Datos cargados correctamente.
+                    </div>
+             </div>";
         break;
     default:
         echo "Error no encontrado";
         break;
 }
+include '../estructura/footer.php';

@@ -148,7 +148,8 @@ echo $variable_no_definida;
                 <input type="number" name="NroDni" id="dni" class="input-text">
             </div>
 
-            <button type="button" onclick="moverA(6)" class="flex-btn" >Ver Error</button>
+         <input type="hidden" name="error" value="6">
+         <button type="submit" class="flex-btn">Ver Error</button>
         </form>
     </div>
 </div>';
@@ -164,7 +165,7 @@ echo $variable_no_definida;
 
 <script>
     function moverA(error){
-        alert(error);
+       // alert(error);
     window.location.href = "http://localhost/PWD-TP5/src/vista/action/error.php?error=" + error;
     }
 </script>
