@@ -35,7 +35,7 @@ division($a, $b);
                 </code>
                 
                 <div class="container-btn">
-                    <button onclick="moverA(1)" class="flex-btn">Ver Error</button>
+                    <button onclick="moverA('1')" class="flex-btn">Ver Error</button>
                 </div>
         </div>
         
@@ -49,7 +49,7 @@ eval('echo "Esto es un error de parseo;');
                 </code> 
                 
                 <div class="container-btn btn-2">
-                    <button onclick="moverA(2)" class="flex-btn"> Ver Error </button>
+                    <button onclick="moverA('2')" class="flex-btn"> Ver Error </button>
                 </div>
             
         </div>
@@ -65,7 +65,7 @@ echo $array[5];
                 </code>
                 
                 <div class="container-btn btn-3">
-                    <button onclick="moverA(3)" class="flex-btn">Ver Error</button>
+                    <button onclick="moverA('3')" class="flex-btn">Ver Error</button>
                 </div>
             
         </div>
@@ -80,7 +80,7 @@ throw new Exception("Esto es una excepción no capturada");
                 </code>
                 
                 <div class="container-btn mt-5 pt-4">
-                    <button onclick="moverA(4)" class="flex-btn">Ver Error</button>
+                    <button onclick="moverA('4')" class="flex-btn">Ver Error</button>
                 </div>
             
         </div>
@@ -94,7 +94,7 @@ echo $variable_no_definida;
                 </code>
                 
                 <div class="container-btn mt-5 pt-3">
-                    <button onclick="moverA(5)" class="flex-btn">Ver Error</button>
+                    <button onclick="moverA('5')" class="flex-btn">Ver Error</button>
                 </div>
 
         </div>
@@ -148,7 +148,7 @@ echo $variable_no_definida;
                 <input type="number" name="NroDni" id="dni" class="input-text">
             </div>
 
-            <button onclick="moverA(6)" class="flex-btn" type="summit">Ver Error</button>
+            <button type="button" onclick="moverA(6)" class="flex-btn" >Ver Error</button>
         </form>
     </div>
 </div>';
@@ -164,6 +164,7 @@ echo $variable_no_definida;
 
 <script>
     function moverA(error){
+        alert(error);
     window.location.href = "http://localhost/PWD-TP5/src/vista/action/error.php?error=" + error;
     }
 </script>
