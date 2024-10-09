@@ -101,7 +101,7 @@ echo $variable_no_definida;
 
         <div class="item-grid box-informacionPersona-grid">
             <h2>Error 6</h2> 
-                <h2>Error de Usuario</h2>
+                <h2 style="margin-bottom: 3%;">Error de Usuario</h2>
                 <?php
                 $personas= $abm->obtenerDatos(null);
 
