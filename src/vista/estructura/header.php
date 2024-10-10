@@ -29,13 +29,11 @@
 
 
     <!--Jquery-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-
-    <!--Validator pluggin-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js?v=1.0.2" defer></script>
 
 
-    <script src="../assets/jquery.js?v=1.2" defer></script>
+    <script src="../assets/jquery.js?v=4.0" defer></script>
 
 </head>
 <body>
