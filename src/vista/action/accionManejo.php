@@ -132,28 +132,27 @@ echo $variable_no_definida;
                 }
 
                 echo '
-                <div class="card-form">
-                    <form action="./error.php" method="post" id="form-persona">
-                        <div class="form-group">
-                            <label for="nombre">Ingrese su nombre</label>
-                            <input type="text" name="Nombre" id="nombre" class="input-text">
-                        </div>
+                    <div class="card-form">
+                        <form action="./error.php" method="post" id="form-persona">
+                            <div class="form-group">
+                                <label for="nombre">Ingrese su nombre</label>
+                                <input type="text" name="Nombre" id="nombre" class="input-text" required minlength="3" maxlenght="30">
+                            </div>
 
-                        <div class="form-group">
-                            <label for="apellido">Ingrese su apellido</label>
-                            <input type="text" name="Apellido" id="apellido" class="input-text">
-                        </div>
+                            <div class="form-group">
+                                <label for="apellido">Ingrese su apellido</label>
+                                <input type="text" name="Apellido" id="apellido" class="input-text" required minlenght="3" maxlenght="30">
+                            </div>
 
-                        <div class="form-group"> 
-                            <label for="dni">Ingrese su dni</label>
-                            <input type="number" name="NroDni" id="dni" class="input-text">
-                        </div>
+                            <div class="form-group"> 
+                                <label for="dni">Ingrese su dni</label>
+                                <input type="number" name="NroDni" id="dni" class="input-text" required minlenght="8" maxlenght="8">
+                            </div>
 
-                        <input type="hidden" name="error" value="6">
-                        <button type="submit" class="flex-btn">Ver Error</button>
-                    </form>
-                </div>
-                
+                            <input type="hidden" name="error" value="6">
+                            <button type="submit" class="flex-btn">Ver Error</button>
+                        </form>
+                    </div>
             </div>';
                 ?>
 

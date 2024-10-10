@@ -16,12 +16,12 @@ class Png
 	 *
 	 * @return string Binary image data
 	 */
-	public function output(QrCode $qrCode, $w = 100, $background = [255, 255, 255], $color = [0, 0, 0], $compression = 0)
+	public function output(QrCode $objQrCode, $w = 100, $background = [255, 255, 255], $color = [0, 0, 0], $compression = 0)
 	{
-		$qrSize = $qrCode->getQrSize();
-		$final = $qrCode->getFinal();
+		$qrSize = $objQrCode->getQrSize();
+		$final = $objQrCode->getFinal();
 
-		if ($qrCode->isBorderDisabled()) {
+		if ($objQrCode->isBorderDisabled()) {
 			$minSize = 4;
 			$maxSize = $qrSize - 4;
 		} else {
