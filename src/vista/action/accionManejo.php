@@ -133,7 +133,7 @@ echo $variable_no_definida;
 
                 echo '
                 <div class="card-form">
-                    <form action="./error.php" method="post">
+                    <form action="./error.php" method="post" id="form-persona">
                         <div class="form-group">
                             <label for="nombre">Ingrese su nombre</label>
                             <input type="text" name="Nombre" id="nombre" class="input-text" required minlength="3" maxlenght="30">

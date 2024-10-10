@@ -3,7 +3,8 @@
 include_once '../estructura/header.php';
 ?>
 <div class="contenedorPrincipal"> 
-    <div class="container-sm">
+    <div class="container-sm pt-5">
+    <h1>Links para ir a las paginas</h1>
         <ul>
             <li><a href="#qrcode" class="fs-1">Qrcode.</a></li>
             <li><a href="#whoop" class="fs-1">Whoops.</a></li>
@@ -15,7 +16,7 @@ include_once '../estructura/header.php';
         <a href="#">Descarga Qrcode</a>
     </div>
     <div class="container-sm mt-4 ">
-        <h1 class="contenidos-tutorial border-bottom">Instalacion de Qrcode para PHP</h1>
+        <h1 class="contenidos-tutorial" style="border:2px solid">Instalacion de Qrcode para PHP</h1>
     </div>
     <div class="contenido-compatibilidades container-sm mt-4">
         <h3>Compatibilidad de versiones</h3>
@@ -76,7 +77,7 @@ include_once '../estructura/header.php';
     </div >
         <div class="container-sm" id="whoop">
             <div class="mt-5">
-                <h1 class="contenidos-tutorial">Instalacion de WHOOPS para PHP</h1>
+                <h1 class="contenidos-tutorial" style="border:2px solid">Instalacion de WHOOPS para PHP</h1>
                 <div class="contenido-descarga container-sm mt-4 border">
                     <p>filps/whoops (PHP Edition)</p>
                     <a href="https://github.com/filp/whoops">Descarga whoops</a>

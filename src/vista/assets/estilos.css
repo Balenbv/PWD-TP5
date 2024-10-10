@@ -344,11 +344,10 @@ label {
 
 }
 .container-sm ul {
-    list-style-type: none;
-    padding-left: 20px;      
+    list-style-type: none;     
     margin-bottom: 20px;     
     display: flex;
-    justify-content: space-evenly;
+    justify-content: start;
           
     padding: 15px;            
 }
@@ -356,7 +355,8 @@ label {
 .container-sm ul li {
     padding: 5px 0;          
     font-size: 16px;        
-    color: #333;             
+    color: #333;   
+    margin-left: 6%;          
 }
 
 
