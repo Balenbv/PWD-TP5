@@ -31,17 +31,13 @@ $mostrarQrHTML = $objHtml->output($ObjCodeQr);
         <h1 class="h1-qr">FORMATO <span class="text-info">SVG</span></h1>
 
     <div class="margenes-qr">
-
         <?php echo $mostrarQrSvg; ?>
-
     </div>
 
         <h1 class="h1-qr">FORMATO <span class="text-info">HTML</span></h1>
 
     <div>
-
         <?php echo $mostrarQrHTML; ?>
-
     </div>
 </div>
 
