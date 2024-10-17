@@ -45,6 +45,7 @@ include_once '../estructura/header.php';
             require 'vendor/autoload.php';
             <br>
             use Endroid\QrCode\QrCode;
+            <br>
             use Endroid\QrCode\Writer\PngWriter;
             <br>
             // Crear una instancia de QrCode
@@ -54,10 +55,15 @@ include_once '../estructura/header.php';
             // Personalizar el código QR (opcional)
             <br>
             $qrCode->setSize(300);
+            <br>
             $qrCode->setMargin(10);
+            <br>
             $qrCode->setEncoding('UTF-8');
+            <br>
             $qrCode->setErrorCorrectionLevel(ErrorCorrectionLevel::HIGH);
+            <br>
             $qrCode->setForegroundColor(['r' => 0, 'g' => 0, 'b' => 0]);
+            <br>
             $qrCode->setBackgroundColor(['r' => 255, 'g' => 255, 'b' => 255]);
             <br>
             // Crear una instancia de PngWriter para generar la imagen
@@ -72,6 +78,7 @@ include_once '../estructura/header.php';
             // Mostrar la imagen en el navegador
             <br>
             header('Content-Type: ' . $result->getMimeType());
+            <br>
             echo $result->getString();
         </code>
     </div >
