@@ -16,7 +16,7 @@
     <title>TP-5 Librerias utiles.</title>
 
     <!--CSS-->
-    <link rel="stylesheet" href="../assets/estilos.css?v=2.7">
+    <link rel="stylesheet" href="../assets/estilos.css?v=2.8">
 
 
     <!--BOOSTRAP-->

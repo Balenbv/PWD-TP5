@@ -425,7 +425,13 @@ label {
         border-radius: 29px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1);
         background-color: #fff;
-        transition: transform 0.3s, box-shadow 0.3s;
+        transition: 0.5s ease-in-out;
+       /* transition: transform 0.6s, box-shadow 0.3s;*/
+}
+.item-grid:hover {
+    transform: translateY(-10px);
+    background-color: #eeeeee;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.479), 0 8px 8px rgba(0, 0, 0, 0.1);
 }
 
 
