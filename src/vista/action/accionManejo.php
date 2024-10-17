@@ -168,8 +168,7 @@ echo $variable_no_definida;
 
 <script>
     function moverA(error){
-       // alert(error);
-    window.location.href = "http://localhost/PWD-TP5/src/vista/action/error.php?error=" + error;
+        window.location.href = "http://localhost/PWD-TP5/src/vista/action/error.php?error=" + error;
     }
 </script>
 

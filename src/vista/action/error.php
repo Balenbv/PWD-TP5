@@ -9,6 +9,7 @@ include '../../control/abmPersona.php';
 
 
 $error = $_GET['error'] ?? null; // Para los errores 1 a 5
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $error = $_POST['error'] ?? null; // Para el error 6
 }
