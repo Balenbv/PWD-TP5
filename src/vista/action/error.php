@@ -2,6 +2,7 @@
 
 include '../estructura/header.php';
 include '../../../config.php';
+
 include '../../control/abmPersona.php';
 
 
@@ -51,6 +52,7 @@ switch ($error){
         $abm = new abmPersona();
         $datos = data_submitted();
         $abm->alta($datos);
+        
         echo "<div class='contenedorPrincipal'>
                     <div class='card-form-correcto'> 
                     Datos cargados correctamente.

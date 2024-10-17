@@ -1,7 +1,7 @@
 <?php
-include "../../../vendor/autoload.php";
+
+include '../../../config.php';
 include '../estructura/header.php';
-include '../../utils/utils.php';
 
 //use es porque hay varios metodos con el mismo nombre
 use Mpdf\QrCode\QrCode;

@@ -1,10 +1,7 @@
 <?php
-require '../../../config.php';
-require '../../../vendor/autoload.php';
-include '../estructura/header.php';
 
-$datos = data_submitted();
-$abm = new abmPersona();
+include '../../../config.php';
+include '../estructura/header.php';
 
 use Whoops\Run;
 use Whoops\Handler\PrettyPageHandler;
@@ -104,7 +101,10 @@ echo $variable_no_definida;
             <h2 style="margin-bottom: 3%;">Error de Usuario</h2>
             <div class='contenedorPrincipal-special'>
                 <?php
-                $personas= $abm->obtenerDatos(null);
+
+                $datos = data_submitted();
+                $abm = new abmPersona();
+                $personas = $abm->obtenerDatos(null);
 
                 if (count($personas) > 0) {
                     echo "
